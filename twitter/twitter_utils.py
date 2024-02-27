@@ -189,7 +189,7 @@ def calc_expected_status_length(status, short_url_length=23):
             status_length += short_url_length
         else:
             for character in word:
-                if any([ord(normalize("NFC", character)) in char_range for char_range in CHAR_RANGES]):
+                if any(ord(normalize("NFC", character)) in char_range for char_range in CHAR_RANGES):
                     status_length += 1
                 else:
                     status_length += 2
