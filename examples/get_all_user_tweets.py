@@ -11,8 +11,6 @@ as many as possible.
 t.py should contain the imported variables.
 """
 
-from __future__ import print_function
-
 import json
 import sys
 

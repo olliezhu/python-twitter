@@ -16,7 +16,6 @@
 # limitations under the License.
 
 """A library that provides a Python interface to the Twitter API."""
-from __future__ import absolute_import
 
 __author__       = 'The Python-Twitter Developers'
 __email__        = 'python-twitter@googlegroups.com'

@@ -16,8 +16,6 @@
 # limitations under the License.
 """Utility to get your access tokens."""
 
-from __future__ import print_function
-
 from requests_oauthlib import OAuth1Session
 import webbrowser
 

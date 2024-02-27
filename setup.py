@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from __future__ import absolute_import, print_function
 
 #
 # Copyright 2007-2016 The Python-Twitter Developers

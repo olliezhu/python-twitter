@@ -4,8 +4,6 @@
 
 __author__ = 'dewitt@google.com'
 
-from __future__ import print_function
-
 try:
     import configparser
 except ImportError as _:

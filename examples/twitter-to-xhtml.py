@@ -18,7 +18,6 @@
 # Load the latest update for a Twitter user and output it as an HTML fragment
 #
 
-from __future__ import print_function
 import codecs
 import sys
 import argparse

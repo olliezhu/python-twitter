@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Collection of utilities for use in API calls, functions."""
-from __future__ import unicode_literals
 
 import filetype
 import os

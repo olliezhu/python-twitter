@@ -26,7 +26,6 @@
 #   Update for Python3 by @jeremylow
 #
 
-from __future__ import print_function
 import twitter
 
 CONSUMER_KEY = 'WWWWWWWW'
