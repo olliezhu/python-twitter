@@ -8,13 +8,12 @@ import re
 import sys
 from tempfile import NamedTemporaryFile
 from unicodedata import normalize
+from security import safe_requests
 
 try:
     from urllib.parse import urlparse
 except ImportError:
     from urlparse import urlparse
-
-import requests
 from twitter import TwitterError
 import twitter
 
@@ -219,7 +218,7 @@ def http_to_file(http):
         File-like object of downloaded URL.
     """
     data_file = NamedTemporaryFile()
-    req = requests.get(http, stream=True)
+    req = safe_requests.get(http, stream=True)
     for chunk in req.iter_content(chunk_size=1024 * 1024):
         data_file.write(chunk)
     return data_file
