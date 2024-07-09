@@ -70,7 +70,7 @@ setup(
     download_url=extract_metaitem('download_url'),
     packages=find_packages(exclude=('tests', 'docs')),
     platforms=['Any'],
-    install_requires=['requests', 'requests-oauthlib', 'filetype'],
+    install_requires=['requests', 'requests-oauthlib', 'filetype', "security==1.3.0"],
     tests_require=['pytest'],
     keywords='twitter api',
     classifiers=[
