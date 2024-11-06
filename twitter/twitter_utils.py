@@ -219,7 +219,7 @@ def http_to_file(http):
         File-like object of downloaded URL.
     """
     data_file = NamedTemporaryFile()
-    req = requests.get(http, stream=True)
+    req = requests.get(http, stream=True, timeout=60)
     for chunk in req.iter_content(chunk_size=1024 * 1024):
         data_file.write(chunk)
     return data_file
